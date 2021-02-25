@@ -16,7 +16,6 @@ body {
   color: #1eff00;
 }
 
-
 .nav-link {
   color: var(--primary-color);
 }
@@ -108,7 +107,7 @@ p {
 
 .about-paragraphs p {
   margin: 10px;
-  color: whitesmoke);
+  color: whitesmoke;
 }
 
 .row {
@@ -128,4 +127,41 @@ p {
 .email-link:hover {
   text-decoration: underline;
   color: var(--accent-color);
+}
+
+footer {
+  text-align: center;
+  font-size: 15px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+@media (max-width: 576px) {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .desktop-logo {
+    display: none;
+  }
+  a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  a:hover {
+    color: var(--accent-color);
+  }
+}
+
+@media (min-width: 600px) {
+  .mobile-only {
+    display: none;
+  }
 }
